@@ -7,11 +7,10 @@ import istea from '../assets/images/istea.png'
 import { CircleFlag } from 'react-circle-flags'
 import Experience from './Experience';
 import Skills from './Skills';
-import icons from '../assets/images';
-
+import {Technical,Soft} from '../assets/images';
 
 const Resume = () => {
-    console.log('image',icons);
+;
     return (
         <>
             <Container minWidth={["540px", "767px", "992px", "1200px"]}>
@@ -92,30 +91,24 @@ const Resume = () => {
                 {/* ----------------------------------------------------------!EXPERIENCE---------------------------------------------------------- */}
                 <Divider my="2rem" />
                           {/* ----------------------------------------------------------SKILLS---------------------------------------------------------- */}
-                <VStack fontSize="xs" >
-                    <VStack alignSelf="start">
-                        <Text fontWeight="bold" whiteSpace="nowrap">Skills</Text>
+                <VStack fontSize="xs">
+                    <VStack alignSelf="start" >
+                        <Text fontWeight="bold" whiteSpace="nowrap" >Skills</Text>
                     </VStack>
-                        <HStack fontWeight="semibold" color="brand.tertiary">
-                        <Text pr="2rem">Soft Skills</Text>
-                        <Skills logo={santanderito} name="Node" />
-                        <Skills logo={santanderito} name="Node" />
-                        <Skills logo={santanderito} name="Node" />
-                        <Skills logo={santanderito} name="Node" />
-                        <Skills logo={santanderito} name="Node" />
-                        <Skills logo={santanderito} name="Node" />
-                        <Skills logo={santanderito} name="Node" />
-                        </HStack>
-                        
-
+                    <VStack align="start">
                     <HStack fontWeight="semibold" color="brand.tertiary">
-                        <Text pr="2rem">Soft Skills</Text>
-                        {icons.map((icon) =>{
-                            return (   <Skills logo={icon} name="Node" />)
+                        <Text pr="3.2rem" justifySelf="start">Soft Skills</Text>
+                        {Soft.map((icon) => {
+                            return (<Skills logo={icon.image} name={icon.name} />)
                         })}
-
-                        </HStack>
-
+                    </HStack>
+                    <HStack fontWeight="semibold" color="brand.tertiary" >
+                        <Text pr="1rem">Technical Skills</Text>
+                        {Technical.map((icon) => {
+                            return (<Skills logo={icon.image} name={icon.name} />)
+                        })}
+                    </HStack>
+                    </VStack>
                 </VStack>
                           {/* ----------------------------------------------------------!SKILLS---------------------------------------------------------- */}
                 <Divider my="2rem" />
