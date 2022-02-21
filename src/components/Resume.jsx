@@ -1,5 +1,5 @@
 import React from 'react'
-import { Center, Heading, Container, Box, Image, Stack, HStack, VStack, Text, Divider, IconButton, Button, Flex, Grid } from "@chakra-ui/react";
+import {Heading, Container, Box, Image, Stack, HStack, VStack, Text, Divider, Grid } from "@chakra-ui/react";
 import santanderito from '../assets/images/santanderito.png'
 import sistran from '../assets/images/sistran.png'
 import accenture from '../assets/images/accenture.png'
@@ -8,21 +8,23 @@ import { CircleFlag } from 'react-circle-flags'
 import Experience from './Experience';
 import Skills from './Skills';
 import {Technical,Soft} from '../assets/images';
+import fede from '../../src/assets/fede.png'
 
 const Resume = () => {
 ;
     return (
         <>
             <Container minWidth={["540px", "767px", "992px", "1200px"]}>
-                <Box w='100%' h='100px' bgGradient='linear(to-r, green.200, pink.500)' />
+                <Box w='100%' h='100px' bgGradient='linear(to-r, brand.fifth,brand.fourth,)' />
                 <HStack >
                     <Image
                         borderRadius='full'
                         boxSize='150px'
-                        src='https://bit.ly/dan-abramov'
-                        alt='Dan Abramov'
+                        src={fede}
+                        objectFit="cover"
+                        alt='Fede Crossetto'
                         p="0.2rem"
-                        bg="white"
+                        bg="brand.fourth"
                         pos="relative"
                         top="-4rem"
                         left="2rem"
@@ -39,8 +41,7 @@ const Resume = () => {
                 <VStack alignItems="end">
                     <HStack fontSize="xs">
                         <Text left="0" fontWeight="bold" whiteSpace="nowrap">About me</Text>
-                        <Text pl="12rem" pr="2rem" >I´m a Product Designer based in Melbourne, Australia. I specialize in UX/UI design, brand stategy,and Webflow development. I´m always striving to grow and learn something new and I don´t take myself too seriously.
-                            I´m passionate about helping startups.</Text>
+                        <Text pl="12rem" pr="2rem"  color="brand.tertiary" >Hello! My name is Fede and I enjoy creating things that live on the internet. I am a Software Developer, I had the privilege of working in a large multinational corporation, a national company with services abroad and in a large institution that provides commercial banking for individuals, SMEs and companies. My main focus is to develop myself as a professional, putting all my technical and analytical skills to work to make a difference.</Text>
                     </HStack>
                     <Stack pt="2rem" color="brand.secondary" fontSize="xs" pr="2rem" >
                         <Box bg="brand.backLight" align="rigth" h='80px' w='55rem' borderRadius="2xl">
@@ -56,8 +57,8 @@ const Resume = () => {
                                     <Text fontWeight="semibold">fcrossetto.vercel.app</Text>
                                 </VStack>
                                 <VStack p="1rem">
-                                    <Text>Location</Text>
-                                    <Text fontWeight="semibold"> Melbourne, Australia</Text>
+                                    <Text>Phone Number</Text>
+                                    <Text fontWeight="semibold">+54 11 590-591-54</Text>
                                 </VStack>
                             </HStack>
                         </Box>
@@ -97,13 +98,13 @@ const Resume = () => {
                     </VStack>
                     <VStack align="start">
                     <HStack fontWeight="semibold" color="brand.tertiary">
-                        <Text pr="3.2rem" justifySelf="start">Soft Skills</Text>
+                        <Text pr="1rem" justifySelf="start">Soft Skills</Text>
                         {Soft.map((icon) => {
                             return (<Skills logo={icon.image} name={icon.name} />)
                         })}
                     </HStack>
-                    <HStack fontWeight="semibold" color="brand.tertiary" >
-                        <Text pr="1rem">Technical Skills</Text>
+                    <HStack fontWeight="semibold" color="brand.tertiary" pt="1rem">
+                        <Text pr="1rem">Tech Skills</Text>
                         {Technical.map((icon) => {
                             return (<Skills logo={icon.image} name={icon.name} />)
                         })}

@@ -13,6 +13,8 @@ export default extendTheme({
       primary: "#48FE9D",
       secondary: "#724EFF",
       tertiary: "#9b9c9e",
+      fourth:"#AAA1D0",
+      fifth:"#D0A1A1",
       dark:"#1a202c",
       light:"#ffffff",
       backLight:"#F8F5FE"
