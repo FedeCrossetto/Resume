@@ -32,18 +32,18 @@ const Resume = () => {
                         boxShadow="lg"
                     />
                     <VStack pl="2rem" alignItems="start">
-                        <Heading fontSize="xl" >Federico Crossetto</Heading>
-                        <Text color="brand.tertiary" fontSize="xs">I'm a Frontend Developer based in Buenos Aires Argentina.</Text>
+                        <Heading fontSize="xl" mt="-2rem" ml="1rem">Federico Crossetto</Heading>
+                        <Text color="brand.tertiary" fontSize="xs" pl="1rem">I'm a Frontend Developer based in Buenos Aires Argentina.</Text>
                     </VStack>
                 </HStack>
-                <Divider mb="2rem" />
+                <Divider  mt="-2rem" mb="1rem" />
                 {/* ----------------------------------------------------------ABOUTME---------------------------------------------------------- */}
                 <VStack alignItems="end">
                     <HStack fontSize="xs">
-                        <Text left="0" fontWeight="bold" whiteSpace="nowrap">About me</Text>
+                        <Text left="0" fontWeight="bold" whiteSpace="nowrap" pl="2px">About me</Text>
                         <Text pl="12rem" pr="2rem"  color="brand.tertiary" >Hello! My name is Fede and I enjoy creating things that live on the internet. I am a Software Developer, I had the privilege of working in a large multinational corporation, a national company with services abroad and in a large institution that provides commercial banking for individuals, SMEs and companies. My main focus is to develop myself as a professional, putting all my technical and analytical skills to work to make a difference.</Text>
                     </HStack>
-                    <Stack pt="2rem" color="brand.secondary" fontSize="xs" pr="2rem" >
+                    <Stack pt="1rem" color="brand.secondary" fontSize="xs" pr="2rem" >
                         <Box bg="brand.backLight" align="rigth" h='80px' w='55rem' borderRadius="2xl">
                             <HStack justifyContent="space-between">
                                 <VStack py="1rem" px="2rem">
@@ -65,11 +65,11 @@ const Resume = () => {
                     </Stack>
                 </VStack>
                 {/* ----------------------------------------------------------!ABOUTME---------------------------------------------------------- */}
-                <Divider my="2rem" />
+                <Divider my="1rem" />
                 {/* ----------------------------------------------------------EXPERIENCE---------------------------------------------------------- */}
                 <VStack fontSize="xs">
                     <VStack alignSelf="start">
-                        <Text fontWeight="bold" whiteSpace="nowrap">Experience</Text>
+                        <Text fontWeight="bold" whiteSpace="nowrap" pl="2px">Experience</Text>
                     </VStack>
                     <HStack fontWeight="semibold" color="brand.tertiary">
                     <Text pl="14rem">Jobs</Text>
@@ -90,11 +90,11 @@ const Resume = () => {
                     </HStack>
                 </VStack>
                 {/* ----------------------------------------------------------!EXPERIENCE---------------------------------------------------------- */}
-                <Divider my="2rem" />
+                <Divider my="1rem" />
                           {/* ----------------------------------------------------------SKILLS---------------------------------------------------------- */}
                 <VStack fontSize="xs">
                     <VStack alignSelf="start" >
-                        <Text fontWeight="bold" whiteSpace="nowrap" >Skills</Text>
+                        <Text fontWeight="bold" whiteSpace="nowrap" pl="2px" >Skills</Text>
                     </VStack>
                     <VStack align="start">
                     <HStack fontWeight="semibold" color="brand.tertiary">
