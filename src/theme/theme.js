@@ -15,9 +15,13 @@ export default extendTheme({
       tertiary: "#9b9c9e",
       fourth:"#AAA1D0",
       fifth:"#D0A1A1",
+      sixth:"#d3d0c9",
+      seventh:"#4bb7ef",
+      eighth:"#1db39f",
       dark:"#1a202c",
       light:"#ffffff",
-      backLight:"#F8F5FE"
+      backLight:"#F8F5FE",
+      backLight2:"#f4f4f4",
     },
   },
   components: {
